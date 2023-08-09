@@ -9,57 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./img/logo-login-AUP-1.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            <a href="" class="logo"><img src="./img/logo-login-AUP-1.png" alt="#"></a>
-            <a href="" class="registro">Regístrate</a>
+            <div class="navbar">
+                <i class='bx bx-menu menu_icon'></i>
+                <a class="logo_inicio" href="./index.html"><img src="./img/logo-login-AUP-1.png" alt="logo AUP"></a>
+                <div class="navbar_links">
+                    <div class="sidenav_logo">
+                        <a class="logo_inicio--mobile" href="./index.html"><img src="./img/logo-login-AUP-1.png"  alt="logo AUP"></a>
+                        <i class='bx bx-x cerrar'></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="./index.html" class="link_nav">Inicio</a></li>
+                        <li><a href="" class="link_nav">Beneficios</a></li>
+                        <li><a href="" class="link_nav">Cuotas</a></li>
+                        <li><a href="" class="link_nav">Pagos</a></li>
+                        <li><a href="#" target="_blank" class="link_registro">Regístrate</a></li>
+                    </ul>
+                </div>
+                <a href="#" target="_blank" class="link_registro--mobile">Regístrate</a></li>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="inicio" class="section1 container">
-            <h1 class="h1">Asociación Uruguaya de Psicomotricidad</h1>
-        </section>
-    
-        <section id="beneficios" class="container info">
-            <h2 class="h2">Beneficios de ser socio de AUP</h2>
-            <ul class="ul">
-                <li>Acceso a Biblioteca de la Asociación, acceso a sala, retiro y envío de materiales.</li>
-                <li>Información sobre llamados laborales</li>
-                <li>Información acerca de seminarios, jornadas, talleres y otras actividades académicas de interés para la formación profesional continua.</li>
-                <li>Beneficios en las actividades académicas con costo: descuentos, sorteo de becas, precios diferenciales en todas las actividades organizadas por la A.U.P.</li>
-                <li>Descuentos en la compra de libros, compra de materiales, etc. a través de nuestros convenios. Para visualizar los mismos debe ingresar en la web de A.U.P en la sección convenios ( <a target="_blank" href="https://aupsicomotricidad.org/convenios/" class="link">aupsicomotricidad.org/convenios/</a> ).</li>
-            </ul>
-            <div class="subir">
-                <a href="#inicio" class="boton_subir">Subir<i class="fa-solid fa-arrow-up flecha"></i></a>
-            </div>
-        </section>
-        <section id="cuotas" class="container info">
-            <h2 class="h2">Cuotas</h2>
-            <p class="p"></p>
-            <div class="subir">
-                <a href="#inicio" class="boton_subir">Subir<i class="fa-solid fa-arrow-up flecha"></i></a>
-            </div>
-        </section>
-        <section id="formas" class="container info">
-            <h2 class="h2">Formas de pago</h2>
-            <p class="p"></p>
-            <div class="subir">
-                <a href="#inicio" class="boton_subir">Subir<i class="fa-solid fa-arrow-up flecha"></i></a>
-            </div>
-        </section>
-        <section id="contacto" class="container info contacto">
-            <h2 class="h2">Contacto</h2>
-            <p class="p"></p>
-            <div class="subir">
-                <a href="#inicio" class="boton_subir">Subir<i class="fa-solid fa-arrow-up flecha"></i></a>
-            </div>
-        </section>
-    </main>
+   </header>
 
-    <script src="https://kit.fontawesome.com/abb178cc36.js" crossorigin="anonymous"></script>
+   <script src="./js/script.js"></script>
 </body>
 </html>

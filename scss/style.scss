@@ -4,6 +4,7 @@
 // components
 
 @import './components/inicio';
+@import './components/navbar';
 
 
 // inicialización 
@@ -18,5 +19,6 @@ html {
     /* para que un rem quede en 10 px */
     font-size: 62.5%;
     scroll-behavior: smooth;
+    background-color: $blanco;
 }
 

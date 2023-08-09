@@ -1,0 +1,181 @@
+// configuraciones nav
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: $azul;
+    box-shadow: 0 3px 10px rgba($color: $azul, $alpha: 0.1);
+}
+
+// navbar estado normal
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+
+    .navbar_links {
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            list-style: none;
+            height: 100%;
+
+            .link_nav {
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 1.7rem;
+                font-weight: 600;
+                text-decoration: none;
+                color: rgba($color: $blanco, $alpha: 0.95);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 3px;
+                padding: 0 6px;
+                white-space: nowrap;
+                text-align: center;
+            }
+
+            .link_registro {
+                border-radius: 50px;
+                background: $blanco;
+                box-shadow:  6px 6px 12px #2d1859,
+                -6px -6px 12px #3d2079;
+                color: $azul;
+                border-radius: 20px;
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 0.5rem 1.5rem;
+            }
+        }
+    }
+}
+
+.link_registro--mobile {
+    border-radius: 50px;
+    background: $blanco;
+    box-shadow:  6px 6px 12px #2d1859,
+                -6px -6px 12px #3d2079;
+    color: $azul;
+    border-radius: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    display: none;
+
+}
+
+.logo_inicio {
+    img {
+        height: 50px;
+    }
+}
+.sidenav_logo {
+    display: none;
+
+   img {
+
+    height: 50px;
+   }
+}
+
+.menu_icon {
+    display: none !important;
+}
+
+// media queries
+
+@media screen and (max-width: 1280px) {
+    nav .navbar {
+        padding: 0 25px;
+    }
+
+    .logo_inicio {
+        display: none;
+    }
+
+    .sidenav_logo {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        .cerrar {
+            font-size: 2rem;
+            color: $blanco;
+        }
+
+    }
+
+    .menu_icon {
+        display: inline-block !important;
+        font-size: 2.7rem;
+        color: $blanco;
+    }
+
+    .link_registro--mobile {
+        display: inline-block;
+    }
+
+    .link_registro {
+        display: none;
+    }
+
+    .link_nav{
+        font-size: 1.5rem;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: left !important;
+    }
+
+    .navbar_links {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        display: block;
+        max-width: 270px;
+        width: 40%;
+        height: 100%;
+        background-color: $azul;
+        line-height: 40px;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba($color: $azul, $alpha: 0.1);
+        transition: all 0.5s ease;
+        z-index: 1000;
+        overflow-y: scroll;
+
+        .links {
+            flex-direction: column;
+            align-items: start !important;
+            padding-bottom: 1rem;
+            overflow-y: scroll;
+
+            li {
+                display: block !important;
+                align-self: start !important;
+            }
+        }
+    }
+}
