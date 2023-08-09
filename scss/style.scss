@@ -1,0 +1,22 @@
+// bases
+@import './bases/variables';
+
+// components
+
+@import './components/inicio';
+
+
+// inicialización 
+
+* {
+    padding: 0;
+    margin: 0;
+    font-display: swap;
+}
+
+html {
+    /* para que un rem quede en 10 px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
