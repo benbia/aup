@@ -42,32 +42,24 @@
     font-size: 1.7rem;
   }
 }
-@media screen and (max-width: 992px) and (orientation: landscape) {
+@media screen and (max-width: 992px) {
   .section1 .info .p_inicio {
-    font-size: 1.7rem;
+    font-size: 3.5vw;
+    padding-top: 2rem;
   }
+}
+
+.section2 {
+  background-color: #04bafa;
 }
 
 @media screen and (max-width: 992px) {
   .section1 {
-    flex-direction: column-reverse;
-    padding: 0;
-    justify-content: flex-end;
-    gap: 100px;
+    padding: 0 2rem;
   }
   .section1 .info {
     width: 90%;
     padding: 0;
-  }
-}
-@media screen and (max-width: 992px) and (orientation: landscape) {
-  .section1 {
-    flex-direction: column-reverse;
-    padding: 0;
-    justify-content: flex-end;
-  }
-  .section1 .info {
-    width: 90%;
   }
 }
 nav {
@@ -338,24 +330,9 @@ nav {
     border-radius: 50%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .area {
-    width: 90%;
-    height: 30%;
-    border-radius: 25px;
-    position: relative;
-    top: 90px;
-    margin: 10px 0;
-  }
-}
-@media screen and (max-width: 992px) and (orientation: landscape) {
-  .area {
-    width: 90%;
-    height: 25vh;
-    border-radius: 25px;
-    position: relative;
-    top: 90px;
-    margin: 10px 0;
+    display: none;
   }
 }
 * {

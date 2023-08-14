@@ -41,11 +41,16 @@
                 font-size: 1.7rem;
             }
     
-            @media screen and (max-width: 992px) and (orientation: landscape) {
-                font-size: 1.7rem;
+            @media screen and (max-width: 992px) {
+                font-size: 3.5vw;
+                padding-top: 2rem;
             }
         }
     }
+}
+
+.section2 {
+    background-color: $celeste;
 }
 
 
@@ -53,10 +58,8 @@
 
 @media screen and (max-width: 992px) {
    .section1 {
-    flex-direction: column-reverse;
-    padding: 0;
-    justify-content: flex-end;
-    gap: 100px;
+    padding: 0 2rem;
+    
 
     .info {
         width: 90%;
@@ -66,17 +69,4 @@
    } 
 }
 
-@media screen and (max-width: 992px) and (orientation: landscape){ 
-    .section1 {
-        flex-direction: column-reverse;
-        padding: 0;
-        justify-content: flex-end;
-        
-    
-        .info {
-            width: 90%;
-        }
-    
-       }
-}
 
