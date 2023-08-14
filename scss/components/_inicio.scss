@@ -1,3 +1,82 @@
 
 
 
+.section {
+    height: 100vh;
+}
+
+.section1 {
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .info {
+        width: 50%;
+        padding-right: 2rem;
+        .h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 7rem;
+            font-weight: 600;
+            color: $celeste;
+
+            @media screen and (max-width: 576px) {
+                font-size: 12.3vw;
+                padding-bottom: 1rem;
+            }
+    
+            @media screen and (max-width: 992px) and (orientation: landscape) {
+                font-size: 6.3vw;
+                padding-bottom: 1.7rem;
+            }
+        }
+
+        .p_inicio {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $gris;
+
+            @media screen and (max-width: 576px) {
+                font-size: 1.7rem;
+            }
+    
+            @media screen and (max-width: 992px) and (orientation: landscape) {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+
+// media q
+
+@media screen and (max-width: 992px) {
+   .section1 {
+    flex-direction: column-reverse;
+    padding: 0;
+    justify-content: flex-end;
+    gap: 100px;
+
+    .info {
+        width: 90%;
+        padding: 0;
+    }
+
+   } 
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape){ 
+    .section1 {
+        flex-direction: column-reverse;
+        padding: 0;
+        justify-content: flex-end;
+        
+    
+        .info {
+            width: 90%;
+        }
+    
+       }
+}
+
