@@ -24,11 +24,25 @@
                 font-size: 12.3vw;
                 padding-bottom: 1rem;
             }
-    
-            @media screen and (max-width: 992px) and (orientation: landscape) {
-                font-size: 6.3vw;
+
+            @media screen and (max-width: 992px) and (orientation: landscape) { // resto de celulares
+                font-size: 5rem;
                 padding-bottom: 1.7rem;
+                margin-top: 3rem;
             }
+
+            @media screen and (max-width: 800px) and (orientation: landscape) { // resto de celulares
+                font-size: 5rem;
+                padding-bottom: 1.7rem;
+                margin-top: 20vh;
+            }
+
+            @media screen and (max-width: 797px) and (orientation: landscape) { // para daptar landscape ios celulares
+                font-size: 4.6rem;
+                padding-bottom: 1.7rem;
+                margin-top: 1.5vh;
+            }
+            
         }
 
         .p_inicio {
@@ -41,9 +55,9 @@
                 font-size: 1.7rem;
             }
     
-            @media screen and (max-width: 992px) {
-                font-size: 3.5vw;
-                padding-top: 2rem;
+            @media screen and (max-width: 992px) and (orientation: landscape) {
+                font-size: 2.2vw;
+                padding-top: 0rem;
             }
         }
     }
@@ -51,6 +65,196 @@
 
 .section2 {
     background-color: $celeste;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 6rem 3rem !important;
+}
+
+.section3 {
+    background-color: $blanco;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 6rem 0rem;
+}
+
+.section4 {
+    background-color: $celeste;
+    padding: 6rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.h2 {
+    color: $blanco;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+
+    @media screen and (max-width: 576px) {
+        font-size: 4rem;
+    }
+}
+
+.h2_celeste {
+    color: $celeste;
+}
+
+.ul {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $blanco; 
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+.ul_int {
+    padding-left: 3.5rem;
+    margin-top: 2rem;
+}
+
+
+.ul_celeste {
+    color: $celeste;
+}
+
+.p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $blanco; 
+}
+
+.p_celeste {
+    color: $celeste;
+    padding-bottom: 3rem;
+}
+
+.subtitle {
+    color: $celeste;
+    padding-bottom: 3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.subtitle_blanco {
+    color: $blanco;
+}
+
+.span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $celeste;
+}
+
+.link_interno {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba($color: $azul, $alpha: 0.5);
+}
+
+.strong_title {
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+.strong_interior {
+    font-weight: 650;
+}
+
+.info_int {
+    margin-top: 1.5rem;
+}
+
+.sombras_azul {
+    width: 90%;
+    padding: 5rem 4rem;
+    border-radius: 50px;
+    background: #04bafa;
+    box-shadow:  14px 14px 34px #03a0d7,
+             -14px -14px 34px #05d4ff;
+
+    @media screen and (max-width: 576px) {
+        width: 80%;
+    }
+}
+
+.sombras_blanco {
+    width: 90%;
+    padding: 5rem 4rem;
+    border-radius: 50px;
+    background: #f5f5f7;
+    box-shadow:  14px 14px 34px #d3d3d4,
+             -14px -14px 34px #ffffff;
+}
+
+// footer 
+
+.footer_color {
+    background-color: $naranja;
+    margin: 0;
+}
+
+.footer {
+    height: auto;
+    margin: 6rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2_footer {
+    color: $blanco;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+.h3_footer {
+    color: $blanco;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.h4_footer {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: $blanco;
+    margin-top: 0.5rem;
+}
+
+.ul_footer {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: $blanco; 
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.mail_footer {
+    text-decoration: none;
+    color: $blanco;
+    font-weight: 500;
 }
 
 
@@ -69,4 +273,16 @@
    } 
 }
 
+@media screen and (max-width: 992px) and (orientation: portrait){
 
+    .section1 {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape){
+
+    .section1 {
+        height: 120vh;
+    }
+}

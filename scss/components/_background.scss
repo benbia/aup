@@ -1,9 +1,8 @@
 .area{
-    background: $celeste;  
+    background: rgba($color: $celeste, $alpha: 0.8);  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 50%;
     height:100vh;
-    
    
 }
 
